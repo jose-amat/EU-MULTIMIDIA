@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratório 1 | Codificação de Sinais Multimídia</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .header {
+            background-color: #333; /* Cor de fundo do cabeçalho */
+            color: #fff; /* Cor do texto no cabeçalho */
+            padding: 20px; /* Espaçamento interno do cabeçalho */
+            text-align: center; /* Centralizar o texto */
+      }
+      .header img {
+          max-width: 100%;
+          width: 50%;
+          height: 50%;
+          max-width: 50%;
+      }
+
+      #bkg1 {
+        background-image: url('img/bkg1.jpg');
+        background-size: cover; /* ou background-size: contain; dependendo do comportamento desejado */
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+  <body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> UFABC | Codificação de Sinais Multimídia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="HTML5_frederico/index.html">Index</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="HTML5_frederico/bio.html">Bio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="HTML5_frederico/video.html">Vídeo</a>
+          </li>
+                    
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li> -->
+         <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/bkg1.jpg" class="bd-placeholder-img" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>UFABC</h1>
+            <p>Codificação de Sinais Multimídia</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/bkg2.jpg" class="bd-placeholder-img" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="bg-primary text-white p-2 rounded bg-opacity-10">Site desenvolvido por:</h1>
+            <p class="bg-secondary text-white p-2 rounded bg-opacity-10">Jose Amat, Gabriel Aleixo, Frederico Silva</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="img/joseamat.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+        <h2>José</h2>
+        <p>jose.amat@aluno.ufabc.edu.br</p>
+        <p>Engenharia de Informação</p>
+        <p><a class="btn btn-primary" href="https://www.linkedin.com/in/jose-amat-111225157/">LinkedIn</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img/gabriel.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+        <h2>Gabriel</h2>
+        <p>g.aleixo@aluno.ufabc.edu.br</p>
+        <p>Engenharia de Informação</p>
+        <p><a class="btn btn-primary" href="https://www.linkedin.com/in/gabriel-aleixo-97660a205/">LinkedIn</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img/frederico.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+        <h2>Frederico</h2>
+        <p>frederico.silva@aluno.ufabc.edu.br</p>
+        <p>Engenharia Biomédica</p>
+        <p><a class="btn btn-primary" href="#">LinkedIn</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Sejam bem-vindos ao nosso site! <span class="text-muted">Nós somos Jose, Gabriel, e Frederico</span></h2>
+        <!-- <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p> -->
+      </div>
+      <div class="col-md-5">
+        <audio controls>
+         <source class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="audio.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">O que temos em comum?<span class="text-muted">Somos entusiastas sobre os mistérios do universo.</span></h2>
+        <p class="lead">Carl Sagan nos ensina com exemplos simples o conceito teórico e prático da quarta dimensão, e nos mostra como esta e outras dimensões se comportam através do universo.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <video width="500" height="500" controls>
+         <source src="carl_sagan_quarta_dimensao.mp4" type="video/mp4">
+        </video>
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Conheça um pouco mais sobre nós... <span class="text-muted"></span></h2>
+        <!-- <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p> -->
+      </div>
+      <div class="col-md-5">
+        <iframe width="500" height="500" src="sobre_nos.pdf">
+        </iframe>
+        <iframe width="500" height="500" src="Curriculo.docx.pdf">
+        </iframe>
+        <iframe width="500" height="500" src="Curriculo.pdf">
+        </iframe>
+
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+</main>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>
